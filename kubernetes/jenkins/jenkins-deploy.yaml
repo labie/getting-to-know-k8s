@@ -9,8 +9,6 @@ spec:
       labels:
         app: jenkins-leader
     spec:
-      securityContext:
-        fsGroup: 99
       containers:
         - name: jenkins-leader
           image: smesch/jenkins-kubernetes-leader:2.46.2
